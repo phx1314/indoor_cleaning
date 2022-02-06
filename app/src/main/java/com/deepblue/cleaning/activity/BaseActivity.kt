@@ -408,6 +408,7 @@ open class BaseActivity : FragmentActivity(), SocketMessageCallback, View.OnClic
             }
 
             12014 -> {
+
                 if (this@BaseActivity !is ShutdownActivity && !robotApp!!.isShutdownActivityShow) {
                     robotApp!!.isShutdownActivityShow = true
                     startActivity(intentFor<ShutdownActivity>().clearTop())
