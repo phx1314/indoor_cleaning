@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#285CC1">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/back_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginTop="74dp"
+            android:paddingLeft="54dp"
+            android:paddingRight="50dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="42dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+
+        <com.deepblue.cleaning.cleanview.TransformativeImageView2
+            android:id="@+id/timg_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="130dp"
+            android:background="#C5C5C5"
+            android:visibility="gone"
+            app:max_scale="4"
+            app:min_scale="1"
+            app:open_animator="false"
+            app:open_rotate_revert="false"
+            app:open_scale_revert="false"
+            app:open_translate_revert="false"
+            app:revert_duration="300" />
+
+        <ImageView
+            android:id="@+id/img_show"
+            android:layout_width="500dp"
+            android:layout_height="500dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/create_map" />
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:text="@string/tips"
+            android:textColor="#f0f0f0"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/img_play"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/play" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/layout_lock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+

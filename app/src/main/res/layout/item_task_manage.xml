@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical">
+     <com.deepblue.cleaning.cleanview.RoundImageView android:id="@+id/mRoundImageView" android:layout_width="250dp" android:layout_height="190dp" />
+     <TextView android:id="@+id/mTextView" android:layout_width="200dp" android:layout_height="50dp" android:ellipsize="end" android:gravity="center" android:maxLines="2" android:textColor="#fff" android:textSize="20sp" />
+</LinearLayout>
+

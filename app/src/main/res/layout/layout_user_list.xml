@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_list_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/sw_60dp"
+        android:text="@string/user_list"
+        android:textColor="@android:color/white"
+        android:textSize="28dp" />
+
+    <ListView
+        android:id="@+id/user_list_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/sw_415dp"
+        android:layout_marginLeft="@dimen/sw_80dp"
+        android:layout_marginTop="@dimen/sw_45dp"
+        android:divider="@null"
+        android:paddingRight="1dp"
+        android:scrollbarSize="10dp"
+        android:scrollbarThumbVertical="@drawable/listview_thumb"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/sw_46dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/delete_user_iv"
+            android:layout_width="@dimen/sw_140dp"
+            android:layout_height="@dimen/sw_64dp"
+            android:background="@drawable/play_okbutton"
+            android:text="@string/delect"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/choose_user_iv"
+            android:layout_width="@dimen/sw_140dp"
+            android:layout_height="@dimen/sw_64dp"
+            android:layout_marginLeft="@dimen/sw_40dp"
+            android:background="@drawable/dialog_okbutton"
+            android:text="@string/layout_user_list_queding"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+    </LinearLayout>
+</LinearLayout>
+

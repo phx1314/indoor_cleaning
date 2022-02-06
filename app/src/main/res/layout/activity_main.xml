@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clean_bg">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/mSwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="46dp">
+
+            <ImageView
+                android:id="@+id/img_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="53dp"
+                android:paddingRight="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_menu" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="114dp"
+                android:layout_marginRight="27dp"
+                android:layout_marginBottom="43dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="520dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="69dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="173dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="29dp"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="170dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/clean_wave">
+
+                                <com.deepblue.cleaning.cleanview.WaveView
+                                    android:id="@+id/wv_clean_water"
+                                    android:layout_width="150dp"
+                                    android:layout_height="64dp"
+                                    android:layout_centerHorizontal="true"
+                                    app:wave1Color="#00fff9"
+                                    app:waveHeightPercent="0.00" />
+
+                                <TextView
+                                    android:id="@+id/tv_clean_water"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:text="0%"
+                                    android:textColor="#ffffff"
+                                    android:textSize="28sp" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/clean_water"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="55dp"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="173dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/clean_wave">
+
+                                <com.deepblue.cleaning.cleanview.WaveView
+                                    android:id="@+id/wv_dirty_water"
+                                    android:layout_width="150dp"
+                                    android:layout_height="64dp"
+                                    android:layout_centerHorizontal="true"
+                                    app:wave1Color="#f7b500"
+                                    app:waveHeightPercent="0.00" />
+
+                                <TextView
+                                    android:id="@+id/tv_dirty_water"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:text="0%"
+                                    android:textColor="#ffffff"
+                                    android:textSize="28sp" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/dirty_water"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/btn_push_water"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:background="@drawable/shape_yuan"
+                            android:gravity="center"
+                            android:text="@string/push_water"
+                            android:textColor="#ffffff"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/ll_bottom"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="23dp"
+                        android:background="@drawable/shape_map"
+                        android:padding="5dp">
+
+                        <com.deepblue.cleaning.cleanview.TransformativeImageView
+                            android:id="@+id/timg_map"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            app:max_scale="4"
+                            app:min_scale="1"
+                            app:revert_duration="300"
+                            app:scale_center="finger_center" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="bottom"
+                            android:paddingLeft="20dp"
+                            android:paddingBottom="17dp">
+
+                            <LinearLayout
+                                android:id="@+id/ll_gofilling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="40dp"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/ic_filling" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="1dp"
+                                    android:text="@string/filling_point"
+                                    android:textColor="#ffffff"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_gopullwater"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="40dp"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/ic_pullwater" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="1dp"
+                                    android:text="@string/pull_water_point"
+                                    android:textColor="#ffffff"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_gopushwater"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/ll_gopullwater"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/ic_pushwater_normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="1dp"
+                                    android:text="@string/push_water_point"
+                                    android:textColor="#ffffff"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_changemap"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="20dp"
+                                android:orientation="vertical"
+                              >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/ic_changemap" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="1dp"
+                                    android:text="@string/change_map"
+                                    android:textColor="#ffffff"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="77dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/mRelativeLayout_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                  >
+
+                        <RelativeLayout
+                            android:id="@+id/rl_map"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:id="@+id/tv_mapname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_toLeftOf="@+id/img_selall"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:textColor="#ffffff"
+                                android:textSize="30sp" />
+
+                            <ImageView
+                                android:id="@+id/img_selall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/ic_selnor" />
+                        </RelativeLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_task"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:layout_below="@+id/rl_map"
+                            android:layout_marginTop="20dp"
+                            android:overScrollMode="never"
+                            android:paddingRight="1dp"
+                            android:scrollbarSize="10dp"
+                            android:scrollbarThumbVertical="@drawable/listview_thumb"
+                            android:scrollbars="vertical"
+                            app:maxHeight="320dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_below="@+id/rv_task"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="50dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/loop"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tims"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/img_subtraction"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_subtraction" />
+
+                            <RelativeLayout
+                                android:layout_width="60dp"
+                                android:layout_height="50dp">
+
+                                <TextView
+                                    android:id="@+id/tv_times"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="1"
+                                    android:textColor="#ffffff"
+                                    android:textSize="30sp" />
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:id="@+id/img_add"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_add" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/mTextView_add_map"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="179dp"
+                        android:drawableTop="@drawable/ic_add_map"
+                        android:drawablePadding="38dp"
+                        android:text="@string/activity_main_zanwuditu_qingdianji__xinjian"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/rl_play"
+                        android:layout_width="200dp"
+                        android:layout_height="90dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/button_specila"
+                        android:enabled="false"
+                        android:text="@string/start"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_one"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:background="@drawable/btn_select">
+
+                        <ImageView
+                            android:id="@+id/img_one"
+                            android:layout_width="65dp"
+                            android:layout_height="78dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="25dp"
+                            android:src="@drawable/ic_icon_dust" />
+
+                        <TextView
+                            android:id="@+id/tv_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="33dp"
+                            android:text="@string/dust_molel"
+                            android:textColor="#ffffff"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/tv_dust"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="12dp"
+                            android:text="@string/standard"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_two"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:background="@drawable/btn_select">
+
+                        <ImageView
+                            android:id="@+id/img_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/ic_icon_clean" />
+
+                        <TextView
+                            android:id="@+id/tv_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="33dp"
+                            android:text="@string/clean_model"
+                            android:textColor="#ffffff"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/tv_clean"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="12dp"
+                            android:text="@string/standard"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_three"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:background="@drawable/btn_select">
+
+                        <ImageView
+                            android:id="@+id/img_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="32dp"
+                            android:src="@drawable/ic_icon_onekey" />
+
+                        <TextView
+                            android:id="@+id/tv_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="32dp"
+                            android:text="@string/onekey_model"
+                            android:textColor="#ffffff"
+                            android:textSize="30sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <include
+        layout="@layout/layout_lock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clean_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/back_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginTop="74dp"
+            android:paddingLeft="54dp"
+            android:paddingRight="50dp">
+            &gt;
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="42dp"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/malfunction_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/unchecked_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/selector_radio_btn_underline"
+                android:button="@null"
+                android:checked="true"
+                android:paddingBottom="10dp"
+                android:text="@string/unchecked_malfunction"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <RadioButton
+                android:id="@+id/history_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginLeft="58dp"
+                android:background="@drawable/selector_radio_btn_underline"
+                android:button="@null"
+                android:paddingBottom="10dp"
+                android:text="@string/history_malfunction"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/title_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/malfunction_rg"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="69dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/malfunction_level"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/malfunction_code"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/malfunction_time"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/malfunction_desc"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_malfun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_ll"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="80dp">
+
+            <ListView
+                android:id="@+id/malfunction_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:scrollbarSize="10dp"
+                android:scrollbarThumbVertical="@drawable/listview_thumb"
+                android:scrollbars="vertical" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/no_malfunction_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/layout_lock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+

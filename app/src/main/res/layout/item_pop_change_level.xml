@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/dust_nor2" android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/sw_10dp" android:paddingBottom="@dimen/sw_10dp">
+          <TextView style="@style/text_style_13_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="@dimen/sw_10dp" android:text="@string/item_pop_change_level_genggaiqingjielidu" android:textSize="15sp" />
+          <LinearLayout android:id="@+id/mLinearLayout_1" android:layout_width="match_parent" android:layout_height="@dimen/sw_55dp" android:background="#33ffffff" android:gravity="center">
+               <TextView android:id="@+id/mTextView_1" style="@style/text_style_17_white" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/ic_xd_1" android:drawablePadding="3dp" android:gravity="center" android:text="@string/item_pop_change_level_qingdu" android:textColor="#fff" android:textSize="20sp" />
+          </LinearLayout>
+          <LinearLayout android:id="@+id/mLinearLayout_2" android:layout_width="match_parent" android:layout_height="@dimen/sw_55dp" android:gravity="center">
+               <TextView android:id="@+id/mTextView_2" style="@style/text_style_17_white" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/ic_xd_2" android:drawablePadding="3dp" android:gravity="center" android:text="@string/item_pop_change_level_biaozhun" android:textColor="#fff" android:textSize="20sp" />
+          </LinearLayout>
+          <LinearLayout android:id="@+id/mLinearLayout_3" android:layout_width="match_parent" android:layout_height="@dimen/sw_55dp" android:gravity="center">
+               <TextView android:id="@+id/mTextView_3" style="@style/text_style_17_white" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableLeft="@drawable/ic_xd_3" android:drawablePadding="3dp" android:gravity="center" android:text="@string/item_pop_change_level_qiangli" android:textColor="#fff" android:textSize="20sp" />
+          </LinearLayout>
+     </LinearLayout>
+</LinearLayout>
+

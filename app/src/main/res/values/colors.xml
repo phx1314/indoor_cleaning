@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorcommon">#66ffffff</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#6daffc</color>
+    <color name="report_ok">#39de77</color>
+    <color name="report_shut">#f7b500</color>
+    <color name="report_fail">#fa6400</color>
+</resources>

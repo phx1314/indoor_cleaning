@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/mLinearLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#285CC1" android:orientation="vertical">
+     <RelativeLayout android:id="@+id/back_rl" android:layout_width="wrap_content" android:layout_height="42dp" android:layout_marginTop="74dp" android:paddingLeft="54dp" android:paddingRight="50dp">
+          <ImageView android:layout_width="24dp" android:layout_height="42dp" android:src="@drawable/back" />
+     </RelativeLayout>
+     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_marginTop="80dp" android:text="@string/frg_task_manage_renwuguanli" android:textColor="#fff" android:textSize="30sp" />
+     <ImageView android:id="@+id/mImageView_refeash" android:layout_width="50dp" android:layout_height="50dp" android:layout_alignParentRight="true" android:layout_marginTop="95dp" android:layout_marginRight="39dp" android:background="@drawable/ic_refreash" />
+     <GridView android:id="@+id/mGridView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="100dp" android:layout_marginTop="159dp" android:layout_marginRight="93dp" android:layout_marginBottom="122dp" android:horizontalSpacing="29dp" android:listSelector="@android:color/transparent" android:numColumns="4" android:paddingRight="1dp" android:scrollbarSize="10dp" android:scrollbarThumbVertical="@drawable/listview_thumb" android:scrollbars="vertical" android:verticalSpacing="22dp" />
+     <include layout="@layout/layout_lock" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>
+

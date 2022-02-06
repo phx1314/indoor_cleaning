@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_playlock" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#5D000000" android:gravity="center_horizontal" android:orientation="vertical">
+     <TextView android:id="@+id/tv_deviceStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_marginTop="130dp" android:text="@string/str_jqrzzgzqwdr" android:textColor="#32C5FF" android:textSize="40sp" />
+     <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="70dp" android:layout_weight="1">
+          <ImageView android:id="@+id/img_flashplay" android:layout_width="@dimen/sw_300dp" android:layout_height="@dimen/sw_300dp" android:layout_centerHorizontal="true" android:src="@drawable/right" />
+          <RelativeLayout android:layout_width="@dimen/sw_300dp" android:layout_height="@dimen/sw_300dp" android:layout_centerHorizontal="true" android:background="@drawable/ic_breath_bg">
+               <com.deepblue.cleaning.cleanview.RoundProgressBar android:id="@+id/progressbar_donepercent" android:layout_width="@dimen/sw_265dp" android:layout_height="@dimen/sw_265dp" android:layout_centerInParent="true" app:round_color="#35ffffff" app:round_progresscolor="#00FFF9" />
+               <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:gravity="center" android:minWidth="@dimen/sw_90dp" android:orientation="vertical">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:gravity="center" android:text="@string/layout_palylock_yiwancheng" android:textColor="#87B8F1" android:textSize="20sp" />
+                    <TextView android:id="@+id/tv_donePercent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#87B8F1" android:textSize="61sp" android:textStyle="bold" />
+               </LinearLayout>
+          </RelativeLayout>
+     </RelativeLayout>
+     <LinearLayout android:id="@+id/ll_moreinfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:gravity="center" android:orientation="horizontal">
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+               <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:orientation="horizontal">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_gravity="center_vertical" android:scaleType="fitCenter" android:src="@drawable/icon_doing" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:text="@string/layout_palylock_guihuamianji" android:textColor="#ffffff" android:textSize="20sp" />
+               </LinearLayout>
+               <LinearLayout android:layout_width="wrap_content" android:layout_height="50dp" android:orientation="horizontal" android:paddingLeft="50dp">
+                    <TextView android:id="@+id/tv_allarea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom" android:singleLine="true" android:textColor="#ffffff" android:textSize="40sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom" android:text="@string/layout_palylock__" android:textColor="#ffffff" android:textSize="20sp" android:textStyle="bold" />
+               </LinearLayout>
+          </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="112dp" android:orientation="vertical">
+               <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:orientation="horizontal">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_gravity="center_vertical" android:scaleType="fitCenter" android:src="@drawable/icon_doing" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:text="@string/layout_palylock_wanchengqingsaomianji" android:textColor="#ffffff" android:textSize="20sp" />
+               </LinearLayout>
+               <LinearLayout android:layout_width="wrap_content" android:layout_height="50dp" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="15dp">
+                    <TextView android:id="@+id/tv_taskarea2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom" android:singleLine="true" android:textColor="#ffffff" android:textSize="40sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom" android:text="@string/layout_palylock__" android:textColor="#ffffff" android:textSize="20sp" android:textStyle="bold" />
+               </LinearLayout>
+          </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="92dp" android:orientation="vertical">
+               <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:orientation="horizontal">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_gravity="center_vertical" android:scaleType="fitCenter" android:src="@drawable/icon_doing" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:text="@string/layout_palylock_gongzuoshichang" android:textColor="#ffffff" android:textSize="20sp" />
+               </LinearLayout>
+               <TextView android:id="@+id/tv_worktime2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:maxLines="1" android:paddingLeft="8dp" android:textColor="#ffffff" android:textSize="40sp" android:textStyle="bold" />
+          </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="82dp" android:orientation="vertical">
+               <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:orientation="horizontal">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_gravity="center_vertical" android:scaleType="fitCenter" android:src="@drawable/icon_doing" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:text="@string/layout_palylock_shengyushijian" android:textColor="#ffffff" android:textSize="20sp" />
+               </LinearLayout>
+               <TextView android:id="@+id/tv_surplustime2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:maxLines="1" android:paddingLeft="@dimen/sw_10dp" android:textColor="#ffffff" android:textSize="40sp" android:textStyle="bold" />
+          </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="88dp" android:orientation="vertical">
+               <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:orientation="horizontal">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_gravity="center_vertical" android:scaleType="fitCenter" android:src="@drawable/icon_doing" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:text="@string/layout_palylock_xunhuancishu" android:textColor="#ffffff" android:textSize="20sp" />
+               </LinearLayout>
+               <TextView android:id="@+id/tv_looptime2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:maxLines="1" android:paddingLeft="@dimen/sw_10dp" android:textColor="#ffffff" android:textSize="40sp" android:textStyle="bold" />
+          </LinearLayout>
+     </LinearLayout>
+     <TextView android:id="@+id/tv_playtips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginTop="34dp" android:layout_marginBottom="54dp" android:text="@string/click_lock" android:textColor="#8087B8F1" android:textSize="28sp" />
+</LinearLayout>
+

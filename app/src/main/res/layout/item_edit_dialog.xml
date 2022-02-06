@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@drawable/shape_edit_bg_dialog"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/mEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="47dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="top"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+        <!--        <View-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_weight="1" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/shape_edit_bottom_bg_dialog">
+
+            <TextView
+                android:id="@+id/mTextView_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/item_edit_dialog_quxiao"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/mTextView_sure"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/item_edit_dialog_queding"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

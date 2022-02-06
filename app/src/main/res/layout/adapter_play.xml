@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_taskbg" android:layout_width="match_parent" android:paddingRight="27dp" android:layout_height="49dp" android:background="@drawable/user_background">
+     <TextView android:id="@+id/tv_taskname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginLeft="25dp" android:textColor="#ffffff" android:textSize="20sp" />
+     <ImageView android:id="@+id/img_sel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:src="@drawable/ic_selchecked" />
+     <TextView android:id="@+id/tv_rangpro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textColor="#ffffff" android:textSize="30sp" android:visibility="gone" />
+</RelativeLayout>
+

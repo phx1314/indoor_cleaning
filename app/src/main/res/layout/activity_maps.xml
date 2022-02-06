@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#285CC1">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/back_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginTop="74dp"
+            android:paddingLeft="54dp"
+            android:paddingRight="50dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="42dp"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="74dp"
+            android:text="@string/map_manager"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <GridView
+            android:id="@+id/gv_maplist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="76dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="90dp"
+            android:horizontalSpacing="27dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:paddingRight="1dp"
+            android:scrollbarSize="10dp"
+            android:scrollbarThumbVertical="@drawable/listview_thumb"
+            android:scrollbars="vertical"
+            android:verticalSpacing="35dp" />
+
+        <LinearLayout
+            android:id="@+id/rl_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/input_mapmanager"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_edit"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="80dp"
+                android:padding="10dp"
+                android:src="@drawable/select_map_edit" />
+
+            <ImageView
+                android:id="@+id/img_detail"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="60dp"
+                android:padding="10dp"
+                android:src="@drawable/select_map_copy" />
+
+            <ImageView
+                android:id="@+id/img_del"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="80dp"
+                android:padding="10dp"
+                android:src="@drawable/select_map_del" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/layout_lock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+

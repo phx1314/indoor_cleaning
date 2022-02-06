@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <declare-styleable name="Battery">
+        <attr name="android:orientation" />
+        <attr name="lowColor" format="reference|color" />
+        <attr name="middleColor" format="reference|color" />
+        <attr name="highColor" format="reference|color" />
+        <attr name="lowPower" format="integer" />
+        <attr name="highPower" format="integer" />
+        <attr name="frameColor" format="reference|color" />
+        <attr name="power" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MaxHeightRecyclerView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="MyProgressBar">
+        <attr name="round_color" format="color" />
+        <attr name="round_progresscolor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="reach_height" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TransformativeImageView2">
+        <attr name="max_scale2" format="float" />
+        <attr name="min_scale2" format="float" />
+        <attr name="revert_duration2" format="integer" />
+        <attr name="open_scale_revert" format="boolean" />
+        <attr name="open_rotate_revert" format="boolean" />
+        <attr name="open_translate_revert" format="boolean" />
+        <attr name="open_animator" format="boolean" />
+        <attr name="scale_center2" format="enum">
+            <enum name="img_center" value="0" />
+            <enum name="finger_center" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="CleanBar">
+        <attr name="has_menu" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="WaveProgressView">
+        <attr name="waterColor" format="color"></attr>
+        <attr name="circleColor" format="color"></attr>
+        <attr name="length" format="float"></attr>
+        <attr name="progress" format="float"></attr>
+        <attr name="bakcColor" format="color"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="WaveView">
+
+        <attr name="waveSpeed" format="float" />
+        <attr name="waveRange" format="dimension|reference" />
+        <attr name="wave1Color" format="color|reference" />
+        <attr name="wave2Color" format="color|reference" />
+        <attr name="waveHeightPercent" format="float" />
+        <attr name="waveStrokeWidth" format="dimension|reference" />
+        <attr name="isCircle" format="boolean" />
+        <attr name="period" format="float" />
+
+    </declare-styleable>
+
+    <declare-styleable name="TransformativeImageView">
+        <attr name="max_scale" format="float" />
+        <attr name="min_scale" format="float" />
+        <attr name="revert_duration" format="integer" />
+        <attr name="scale_center" format="enum">
+            <enum name="img_center" value="0" />
+            <enum name="finger_center" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RoundImageView">
+        <!-- 描边宽度-->
+        <attr name="border_width" format="dimension" />
+        <!-- 描边颜色-->
+        <attr name="border_color" format="color" />
+        <!--圆角大小-->
+        <attr name="corner_radius" format="dimension" />
+        <!--左上圆角大小-->
+        <attr name="leftTop_corner_radius" format="dimension" />
+        <!--右上圆角大小-->
+        <attr name="rightTop_corner_radius" format="dimension" />
+        <!--左下圆角大小-->
+        <attr name="leftBottom_corner_radius" format="dimension" />
+        <!--右下圆角大小-->
+        <attr name="rightBottom_corner_radius" format="dimension" />
+        <!--图片类型：圆角或者圆形-->
+        <attr name="type" format="enum">
+            <enum name="oval" value="2" />
+            <enum name="round" value="1" />
+            <enum name="circle" value="0" />
+        </attr>
+    </declare-styleable>
+
+
+</resources>

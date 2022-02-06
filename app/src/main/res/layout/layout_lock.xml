@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_lock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/clean_bg_an"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/mTextView_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:text="@string/app_locking"
+            android:textColor="#32C5FF"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/img_flash"
+            android:layout_width="@dimen/sw_340dp"
+            android:layout_height="@dimen/sw_340dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/right" />
+
+        <RelativeLayout
+            android:id="@+id/mRelativeLayout_bg"
+            android:layout_width="@dimen/sw_340dp"
+            android:layout_height="@dimen/sw_340dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_breath_bg">
+
+            <ImageView
+                android:id="@+id/mImageView"
+                android:layout_width="@dimen/sw_100dp"
+                android:layout_height="@dimen/sw_100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/logo" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_playtips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="54dp"
+            android:text="@string/click_lock"
+            android:textColor="#8087B8F1"
+            android:textSize="28sp" />
+
+        <View
+            android:id="@+id/mImageView_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000" />
+    </RelativeLayout>
+
+    <com.deepblue.cleaning.cleanview.CleanBar
+        android:id="@+id/cb_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+

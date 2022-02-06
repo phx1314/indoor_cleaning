@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#919196">
+     <com.deepblue.cleaning.cleanview.TransformativeImageView android:id="@+id/img_map" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#8B8A8F" android:scaleType="fitCenter" app:max_scale="4" app:min_scale="1" app:revert_duration="300" app:scale_center="finger_center" />
+     <TextView android:id="@+id/tv_mapname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginBottom="50dp" android:textColor="#ffffff" android:textSize="30sp" />
+     <RelativeLayout android:id="@+id/back_rl" android:layout_width="wrap_content" android:layout_height="42dp" android:layout_marginTop="74dp" android:paddingRight="50dp" android:paddingLeft="54dp">
+          <ImageView android:layout_width="24dp" android:layout_height="42dp" android:src="@drawable/back" />
+     </RelativeLayout>
+</RelativeLayout>
+

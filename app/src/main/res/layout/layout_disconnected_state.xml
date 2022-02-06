@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/disconnected_state_ll" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center_horizontal" android:orientation="vertical">
+     <ImageView android:layout_width="200dp" android:layout_height="36dp" android:layout_marginTop="145dp" android:src="@drawable/disconnected_tip_icon" />
+     <ImageView android:layout_width="321dp" android:layout_height="258dp" android:layout_marginTop="85dp" android:src="@drawable/disconnected_icon" />
+     <TextView android:id="@+id/reconnect_tv" android:layout_width="200dp" android:layout_height="70dp" android:layout_marginTop="88dp" android:background="@drawable/dialog_okbutton" android:gravity="center" android:text="@string/reconnect" android:textColor="#ffffff" android:textSize="30sp" />
+</LinearLayout>
+

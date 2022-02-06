@@ -1,0 +1,6 @@
+rootProject.name = 'Cleaning'
+include ':app'
+include ':planbmsg'
+project(':planbmsg').projectDir = new File(settingsDir, '../DeepblueLibraries/planbmsg')
+include ':wheelpicker'
+project(':wheelpicker').projectDir = new File(settingsDir, '../DeepblueLibraries/wheelpicker')

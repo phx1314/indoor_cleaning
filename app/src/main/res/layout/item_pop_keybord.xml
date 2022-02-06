@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mLinearLayout_edit"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@drawable/shape_bg_dialog3"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/mEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="45dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="top"
+            android:hint="请输入18位SN号"
+            android:textColor="#fff"
+            android:textColorHint="#80ffffff"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/shape_edit_bottom_bg_dialog3">
+
+            <TextView
+                android:id="@+id/mTextView_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/item_edit_dialog_quxiao"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/mTextView_sure1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/item_edit_dialog_queding"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mLinearLayout_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/ic_waring" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="输入错误"
+            android:textColor="#99ffffff"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4E7ED9"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mTextView_1"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/mTextView_2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="19dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/mTextView_3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="19dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/mTextView_4"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="19dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/mTextView_5"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="19dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/mTextView_6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="19dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/mTextView_7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="19dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/mTextView_8"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="19dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/mTextView_9"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="19dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/mTextView_0"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="19dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/mTextView_sure"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="19dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center"
+                android:text="@string/item_pop_keybord_queding"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mTextView_q"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="q"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_w"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="w"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_e"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="e"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_r"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="r"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_t"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="t"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_y"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="y"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_u"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="u"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_i"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="i"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_o"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="o"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_p"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="p"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mTextView_a"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="a"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_s"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="s"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_d"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="d"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_f"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="f"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_g"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="g"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_h"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="h"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_j"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="j"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_k"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="k"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_l"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="l"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/mImageButton_dx"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center"
+                android:src="@drawable/input_keybord_press_left_x" />
+
+            <TextView
+                android:id="@+id/mTextView_dot"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center"
+                android:text="."
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_z"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="z"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_x"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="x"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_c"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="c"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_v"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="v"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_b"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="b"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_n"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="n"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_m"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="m"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/mTextView_special"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="7dp"
+                android:text="\@"
+                android:textColor="@color/sel_tvkeyboard"
+                android:textSize="30sp" />
+
+            <ImageButton
+                android:id="@+id/mImageButton_del"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/input_keybord_press"
+                android:gravity="center"
+                android:src="@drawable/input_del_press" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

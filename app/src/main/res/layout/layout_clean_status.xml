@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal" android:paddingLeft="158dp" android:paddingRight="77dp">
+     <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+          <ImageView android:layout_width="63dp" android:layout_height="63dp" android:background="@drawable/work_time_icon" />
+          <ImageView android:layout_width="63dp" android:layout_height="63dp" android:layout_marginTop="37dp" android:background="@drawable/water_consumption" />
+     </LinearLayout>
+     <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginLeft="29dp" android:orientation="vertical">
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/working_time" android:textColor="@android:color/white" android:textSize="20sp" />
+          <TextView android:id="@+id/working_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@android:color/white" android:textSize="40sp" android:textStyle="bold" />
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:text="@string/water_consumption" android:textColor="@android:color/white" android:textSize="20sp" />
+          <TextView android:id="@+id/water_consumption_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@android:color/white" android:textSize="40sp" android:textStyle="bold" />
+     </LinearLayout>
+     <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" />
+     <RelativeLayout android:layout_width="200dp" android:layout_height="200dp" android:background="#ff0000">
+          <com.deepblue.cleaning.cleanview.RoundProgressBar android:id="@+id/complete_percent_view" android:layout_width="185dp" android:layout_height="185dp" android:layout_centerInParent="true" app:round_color="#35ffffff" app:round_progresscolor="#00FFF9" />
+          <LinearLayout android:layout_width="200dp" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_marginTop="45dp" android:gravity="center_horizontal" android:orientation="vertical">
+               <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="@string/completion_ratio" android:textColor="#87B8F1" android:textSize="20sp" />
+               <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="bottom" android:orientation="horizontal">
+                    <TextView android:id="@+id/completion_ratio_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12" android:textColor="#87B8F1" android:textSize="60sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" android:textColor="#87B8F1" android:textSize="26sp" />
+               </LinearLayout>
+          </LinearLayout>
+     </RelativeLayout>
+     <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="5dp" android:orientation="vertical">
+          <TextView android:id="@+id/clean_area_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/little_cycle" android:drawablePadding="5dp" android:text="@string/complete_cleaning_area" android:textColor="@android:color/white" android:textSize="15sp" />
+          <TextView android:id="@+id/clean_area_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15dp" android:textColor="@android:color/white" android:textSize="40sp" android:textStyle="bold" />
+          <TextView android:id="@+id/planning_area_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:drawableLeft="@drawable/little_cycle" android:drawablePadding="5dp" android:text="@string/planning_area" android:textColor="@android:color/white" android:textSize="15sp" />
+          <TextView android:id="@+id/planning_area_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15dp" android:textColor="@android:color/white" android:textSize="40sp" android:textStyle="bold" />
+     </LinearLayout>
+</LinearLayout>
+

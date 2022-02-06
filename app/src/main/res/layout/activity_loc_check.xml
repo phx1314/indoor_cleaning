@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LocCheckActivity">
+
+    <com.deepblue.cleaning.cleanview.TransformativeImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33005FFF" />
+
+    <LinearLayout
+        android:id="@+id/fl_back"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginTop="74dp"
+        android:paddingLeft="54dp"
+        android:paddingRight="50dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="42dp"
+            android:src="@drawable/back" />
+    </LinearLayout>
+
+    <com.deepblue.cleaning.cleanview.CleanBar
+        android:id="@+id/cb_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="805dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/cb_bar"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="41dp"
+        android:paddingRight="56dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sure_location_exact"
+            android:textColor="@android:color/black"
+            android:textSize="40sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btn_mistake"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="#00000000"
+            android:src="@drawable/error" />
+
+        <ImageButton
+            android:id="@+id/btn_correct"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="27dp"
+            android:background="#00000000"
+            android:src="@drawable/zhengque" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_rotate_loc"
+        android:layout_width="322dp"
+        android:layout_height="322dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/ic_xzdw"
+        android:gravity="center"
+        android:text="@string/i_xzdw"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:visibility="gone" />
+</RelativeLayout>
+

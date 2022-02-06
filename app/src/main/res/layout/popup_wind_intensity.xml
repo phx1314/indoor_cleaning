@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_cleaning_intensity_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sw_18dp"
+        android:layout_marginBottom="@dimen/sw_14dp"
+        android:text="@string/change_cleaning_intensity"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sw_15sp" />
+
+    <RelativeLayout
+        android:id="@+id/mild_wind_intensity_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/sw_64dp"
+            android:layout_height="@dimen/sw_23dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/sw_37dp"
+            android:background="@drawable/mild_wind_intensity" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/standard_wind_intensity_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/sw_64dp"
+            android:layout_height="@dimen/sw_23dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/sw_37dp"
+            android:background="@drawable/standard_wind_intensity" />
+    </RelativeLayout>
+</LinearLayout>
+

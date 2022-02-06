@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clean_bg_an">
+
+    <RelativeLayout
+        android:id="@+id/rl_backtocdd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_backtocdd_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="115dp"
+            android:gravity="center"
+            android:text="@string/i_fhcdd"
+            android:textColor="#32C5FF"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/img_flash_6"
+            android:layout_width="@dimen/sw_340dp"
+            android:layout_height="@dimen/sw_340dp"
+            android:layout_below="@+id/tv_backtocdd_toast"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="92dp"
+            android:src="@drawable/right" />
+
+        <ImageView
+            android:id="@+id/mImageView_bg"
+            android:layout_width="@dimen/sw_340dp"
+            android:layout_height="@dimen/sw_340dp"
+            android:layout_below="@+id/tv_backtocdd_toast"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="92dp" />
+
+        <TextView
+            android:id="@+id/tv_playtips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="54dp"
+            android:text="@string/click_lock"
+            android:textColor="#8087B8F1"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/layout_palylock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.deepblue.cleaning.cleanview.CleanBar
+        android:id="@+id/cb_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/view_backtocdd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000" />
+</RelativeLayout>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/clean_bg">
+     <RelativeLayout android:id="@+id/rl_content" android:layout_width="match_parent" android:layout_height="match_parent">
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_marginTop="140dp" android:text="@string/select_mode" android:textColor="#ffffff" android:textSize="50sp" />
+          <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true" android:gravity="center_horizontal" android:layout_marginTop="257dp" android:orientation="horizontal">
+               <RelativeLayout android:id="@+id/rl_common" android:layout_width="490dp" android:layout_height="410dp" android:layout_marginRight="11dp" android:background="@drawable/sel_model_bg">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:orientation="vertical">
+                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:text="@string/common_model" android:textColor="#ffffff" android:textSize="50sp" />
+                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="52dp" android:text="@string/common_tips" android:textColor="#ffffff" android:textSize="28sp" />
+                    </LinearLayout>
+               </RelativeLayout>
+               <RelativeLayout android:id="@+id/rl_stone" android:layout_width="490dp" android:layout_height="410dp" android:background="@drawable/sel_stone">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/user_background2" />
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:orientation="vertical">
+                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:text="@string/stone_model" android:textColor="#ffffff" android:textSize="50sp" />
+                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="52dp" android:text="@string/stone_tips" android:textColor="#ffffff" android:textSize="28sp" />
+                    </LinearLayout>
+               </RelativeLayout>
+          </LinearLayout>
+     </RelativeLayout>
+     <include layout="@layout/layout_lock" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>
+

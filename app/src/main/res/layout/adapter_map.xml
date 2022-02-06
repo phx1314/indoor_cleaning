@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical">
+     <RelativeLayout android:id="@+id/rl_mapbg" android:layout_width="match_parent" android:layout_height="190dp" android:background="@drawable/select_map" android:padding="3dp" android:scaleType="fitCenter">
+          <com.deepblue.cleaning.cleanview.RoundImageView android:id="@+id/img_map" android:layout_width="match_parent" android:layout_height="match_parent" app:leftBottom_corner_radius="10dp" app:leftTop_corner_radius="10dp" app:rightBottom_corner_radius="10dp" app:rightTop_corner_radius="10dp" />
+          <RelativeLayout android:id="@+id/rl_newmap" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/newmap_bg" android:visibility="gone">
+               <ImageView android:id="@+id/img_add" android:layout_width="60dp" android:layout_height="60dp" android:layout_centerInParent="true" android:scaleType="fitXY" android:src="@drawable/ic_plus" />
+          </RelativeLayout>
+     </RelativeLayout>
+     <TextView android:id="@+id/tv_mapname" android:layout_width="match_parent" android:layout_height="50dp" android:ellipsize="end" android:gravity="center" android:maxLines="2" android:textColor="#ffffff" android:textSize="20sp" />
+</LinearLayout>
+

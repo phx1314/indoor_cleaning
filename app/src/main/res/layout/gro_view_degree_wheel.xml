@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/dwBackground" android:layout_width="80dp" android:layout_height="wrap_content" android:background="@drawable/editmap_left">
+     <ImageView android:id="@+id/item" android:layout_width="match_parent" android:layout_height="0dp" android:layout_centerInParent="true" android:scaleType="fitXY" android:src="@drawable/gro_selbg" />
+     <com.deepblue.cleaning.cleanview.DegreeWheel android:id="@+id/degreewheel" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" android:paddingStart="5dp" android:paddingTop="5dp" android:paddingEnd="5dp" android:paddingBottom="5dp" app:wheel_atmospheric="true" app:wheel_curved="true" app:wheel_cyclic="true" app:wheel_item_text_color="#77FFFFFF" app:wheel_item_text_size="22sp" app:wheel_selected_item_text_color="#ffffffff" />
+</RelativeLayout>
+

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clean_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_content_enginee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/back_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginTop="74dp"
+            android:paddingLeft="54dp"
+            android:paddingRight="50dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="42dp"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/mLinearLayout_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" />
+
+            <RadioGroup
+                android:id="@+id/mRadioGroup"
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/gongcheng_bg"
+                android:checkedButton="@+id/mRadioButton1"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/mTextView_bjkz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/activity_engineering_mode_bujiankongzhi"
+                    android:textColor="#4E7ED9"
+                    android:textSize="28sp" />
+
+                <RadioButton
+                    android:id="@+id/mRadioButton1"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/btn_checked"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/activity_engineering_mode_gongchengmianban"
+                    android:textColor="#fff"
+                    android:textSize="30sp" />
+
+                <RadioButton
+                    android:id="@+id/mRadioButton2"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_checked"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/activity_engineering_mode_quyurenwushezhi"
+                    android:textColor="#fff"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="72dp"
+                    android:text="@string/activity_engineering_mode_canshushezhi"
+                    android:textColor="#4E7ED9"
+                    android:textSize="28sp" />
+
+                <RadioButton
+                    android:id="@+id/mRadioButton3"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/btn_checked"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/activity_engineering_mode_penshui"
+                    android:textColor="#fff"
+                    android:textSize="30sp" />
+
+                <RadioButton
+                    android:id="@+id/mRadioButton4"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_checked"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/activity_engineering_mode_penwu"
+                    android:textColor="#fff"
+                    android:textSize="30sp" />
+
+                <RadioButton
+                    android:id="@+id/mRadioButton5"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_checked"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/activity_engineering_mode_xili"
+                    android:textColor="#fff"
+                    android:textSize="30sp" />
+
+                <RadioButton
+                    android:id="@+id/mRadioButton6"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_checked"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/activity_engineering_mode_sudu"
+                    android:textColor="#fff"
+                    android:textSize="30sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/layout_lock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+
